@@ -15,11 +15,11 @@ class UniversityModel {
     name = json['name'];
     stateprovince = json['state-province'];
   }
-  List<String> domains;
-  String alphaTwoCode;
-  String country;
-  List<String> webPages;
-  String name;
+  List<String>? domains;
+  String? alphaTwoCode;
+  String? country;
+  List<String>? webPages;
+  String? name;
   dynamic stateprovince;
 
   Map<String, dynamic> toJson() {

@@ -2,13 +2,13 @@ import 'package:dio/dio.dart';
 import 'package:rest_api_request/api/api_const.dart';
 import 'package:rest_api_request/api/api_interceptors.dart';
 
-class ApiServiceMunStore {
+class ApiService {
   late Dio _dio;
 
-  ApiServiceMunStore() {
+  ApiService() {
     BaseOptions options = BaseOptions(baseUrl: ApiConst.baseUrl, receiveTimeout: 60000, connectTimeout: 60000);
     _dio = Dio(options);
-    _dio.interceptors.add(LoggingInterceptor());
+    _dio.interceptors.add(APIInterceptor());
   }
 
   Future get(

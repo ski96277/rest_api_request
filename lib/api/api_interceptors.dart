@@ -2,7 +2,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 
-class LoggingInterceptor extends Interceptor {
+class APIInterceptor extends Interceptor {
   final int _maxCharactersPerLine = 200;
 
   @override
